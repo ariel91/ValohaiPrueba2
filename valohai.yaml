@@ -8,13 +8,7 @@
     inputs:
       - name: my-raw-mnist-dataset
         default: datum://01712b11-e1be-138c-579e-c0f95f41393f
-- step:
-    name: Train MNIST model
-    image: tensorflow/tensorflow:2.0.1-gpu-py3
-    command: python train.py
-    inputs:
-        - name: my-processed-mnist-dataset
-          default: datum://01712b28-b587-a02f-7301-e0035441e505
+
 - pipeline:
     name: Training pipeline
     nodes:
