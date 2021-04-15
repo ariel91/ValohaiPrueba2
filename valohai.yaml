@@ -1,11 +1,11 @@
 ---
 
 - step:
-    name: Train MNIST model
+    name: Primera Imagen en Valohai
     image: tensorflow/tensorflow:2.0.1-gpu-py3
     command:
        - pip install matplotlib
        - pip install pandas
        - pip install scikit-learn
        - pip install valohai-cli
-       - python simple_linear_regression.py
+       - python train.py
